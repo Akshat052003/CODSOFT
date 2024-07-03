@@ -1,80 +1,114 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
-body{
+
+body {
     width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(45deg,#0a0a0a,#3a4452);
+    background: linear-gradient(45deg, #0a0a0a, #3a4452);
 }
-.calculator{
+
+.calculator {
+    width: 100%;
+    max-width: 500px;
+    height: 600px;
     border: 1px solid #717377;
     background: transparent;
     padding: 20px;
-    border-radius : 16px ;
+    border-radius: 16px;
     box-shadow: 0px 3px 15px rgba(113, 115, 119, 0.5);
-
 }
-input{
-    width: 320px;
-    padding: 24px;
-    margin: 10px;
+
+.inputBox {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 15px;
     border: none;
     background: transparent;
     box-shadow: 0px 3px 15px rgba(84, 84, 84, 0.1);
-    font-size: 40px;
+    font-size: 2.5rem;
     text-align: right;
-    cursor: pointer;
     color: #ffffff;
 }
-input::placeholder{
+
+input::placeholder {
     color: #ffffff;
 }
-button{
+
+.calculator-buttons {
+    margin-top: 2rem;
+    margin-left: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
     border: none;
-    width: 60px;
-    height: 60px;
-    margin: 10px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
     background: transparent;
     color: #ffffff;
-    font-size: 20px;
+    font-size: 1.5rem;
     box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1);
     cursor: pointer;
-
+    transition: background-color 0.3s ease;
 }
-.equal{
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+button.equal {
     background-color: #fb7c14;
 }
-.operator{
+
+button.operator {
     color: greenyellow;
 }
+
 @media (max-width: 600px) {
     .calculator {
-        padding: 10px;
-    }
-    input {
         padding: 15px;
+        max-width: 400px;
+        height: auto;
+    }
+    .inputBox {
+        padding: 15px;
+        font-size: 2rem;
+    }
+    button {
+        width: 60px;
+        height: 60px;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 370px) {
+    .calculator {
+        padding: 10px;
+        max-width: 320px;
+        height: auto;
+    }
+    .calculator-buttons{
+        margin-left: 1.2rem;
+    }
+    .inputBox {
+        padding: 10px;
         font-size: 1.5rem;
     }
     button {
-        padding: 15px;
-        font-size: 1.2rem;
-    }
-}
-@media (max-width: 370px) {
-    input {
-        padding: 10px;
-        font-size: 1.2rem;
-    }
-    button {
-        padding: 10px;
+        width: 50px;
+        height: 50px;
         font-size: 1rem;
     }
 }
