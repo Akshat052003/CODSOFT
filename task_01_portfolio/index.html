@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="header">
+        <a href="#logo" class="logo">
+             PORTFOLIO.<span class="animate" style="--i:1;"></span>
+        </a>
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+        
+            
+        <nav class="navbar ">
+            <a href="#home" style="--i:1;" class="active">Home</a>
+            <a href="#about" style="--i:2;" class="active">About</a>
+            <a href="#projects" style="--i:3;" class="active">Projects</a>
+            <a href="#skills" style="--i:4;" class="active">Skills</a>
+            <a href="#contact" style="--i:5;" class="active">Contact</a>
+            
+            <span class="active-nav"></span>
+            <span class="animate" style="--i:2;"></span>
+        </nav>
+    </header>
+
+    <!-- home section -->
+     <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello , I am</h3>
+            <h1><span>AKSHAT</span> <span>GIRI</span></h1>
+            <h3>And , I'm a <span class="multiple-text"></span></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero reprehenderit natus minus dolor atque in, tenetur omnis facilis? Dicta quas dolores laudantium sapiente deleniti quisquam dolorem dolore eum veniam atque.</p>
+            <div class="social-media">
+                <a href="https://x.com/Akshat_Giri29" style="--i:8;" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/akshat-giri-8a66b2232" style="--i:8;" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/akshat._.giri29/" style="--i:10;" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://github.com/Akshat052003" style="--i:7;" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+                
+            </div>
+            <a href="https://drive.google.com/file/d/1yAKyxSR_cgzJUF_PvWT4kh-WLzSsOyWe/view?usp=sharing" class="download-btn" target="_blank" rel="noopener noreferrer" download="AKSHAT GIRI resume new.pdf">Download CV </a>
+
+        </div>
+        <div class="home-img">
+            <img src="images/image new.png" alt="home">
+            
+        </div>
+
+     </section>
+     
+    <!-- about section -->
+    <section class="about " id="about">
+        <div class="about-img">
+            <img src="images/about.png" alt="">
+            
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3 class="front">Frontend Developer</h3>
+            <p>As a dedicated and enthusiastic Computer Science
+                undergraduate student , I have strong foundation in
+                programming languages such as C/C++ , Java. With a
+                keen interest in problem solving and latest technologies , I
+                try to continuously expand my skills and knowledge in the
+                field.
+           </p>
+
+            <a href="#" class="btn">Read more</a>
+        </div>
+    </section>
+
+    <!-- projects section -->
+       <section class="projects" id="projects">
+        <h2 class="heading">My <span>Projects</span></span></h2>
+        <div class="projects-container">
+            <div class="projects-box">
+                <i class="fa-solid fa-code"></i>
+                <h3>Code Cosm</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores, vero debitis ratione architecto, quia corrupti dolorum nulla accusamus repellat ad nemo atque nihil? Officiis tenetur maiores quas consequuntur rerum. Quaerat.</p>
+                <a href="#" class="btn">Read more</a>
+            </div>
+            <div class="projects-box">
+                <i class="fa-solid fa-code"></i>
+                <h3>Password Generator</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum magnam corrupti vel quasi aperiam exercitationem, rerum perspiciatis tenetur cum blanditiis facilis! Sit suscipit veritatis exercitationem vel aut aliquid. Soluta, obcaecati!</p>
+                <a href="#" class="btn">Read more</a>
+                
+            </div>
+            <div class="projects-box">
+                <i class="fa-solid fa-code"></i>
+                <h3>Weather Application</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta maiores facilis nulla. Illo, expedita animi? Neque delectus cumque commodi similique beatae repellendus molestias distinctio! Tempore laudantium aperiam quasi ab officiis</p>
+                <a href="#" class="btn">Read more</a>
+                
+            </div>
+            
+        </div>
+
+       </section>
+
+    <!-- skills section -->
+    <section class="skills show-animate" id="skills">
+        <h2 class="heading">My <span>Skills</span></h2>
+        <div class="skills-row">
+            <div class="skills-column">
+                <h3 class="title">Technical Skills</h3>
+                <div class="skills-box">
+                    <div class="skills-content">
+                        <div class="progress">
+                            <h3>HTML<span>90%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                        <div class="progress">
+                            <h3>CSS<span>85%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                        <div class="progress">
+                            <h3>Java Script<span>75%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                        <div class="progress">
+                            <h3>C++<span>85%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-column">
+                <h3 class="title">Professional Skills</h3>
+                <div class="skills-box">
+                    <div class="skills-content">
+                        <div class="progress">
+                            <h3>Communication<span>75%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                        <div class="progress">
+                            <h3>Leadership<span>70%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                        <div class="progress">
+                            <h3>Web Development<span>85%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                        <div class="progress">
+                            <h3>Video Editing<span>75%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- contact section -->
+     <section class="contact show-animate" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+        <form action="#">
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="text" placeholder="Full Name" required>
+                    <span class="focus"></span>
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="E-mail address" required>
+                    <span class="focus"></span>
+                </div>
+            </div>
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="number" placeholder="Contact Number" required>
+                    <span class="focus"></span>
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="E-mail subject" required>
+                    <span class="focus"></span>
+                </div>
+            </div>
+            <div class="textarea-field">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                <span class="focus"></span>
+            </div>
+            <div class="btn-box btns">
+                <button type="submit" class="btn">Submit</button>
+            </div>
+        </form>
+     </section>
+
+     <!-- footer design -->
+      <footer class="footer" id="footer">
+        <div class="footer-text">
+            <p>Copyright &copy ; 2024 by Akshat Giri | All Rights Reserved.</p>
+        </div>
+        <div class="footer-topicon">
+            <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
+        </div>
+      </footer>
+      <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
